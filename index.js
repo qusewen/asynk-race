@@ -1,42 +1,10 @@
-const jsonServer = require('json-server');
+const data = require("./db.js");
 
-const db = {
-    garage: [
-        {
-            "name": "Tesla",
-            "color": "#e6e6fa",
-            "id": 1,
-        },
-        {
-            "name": "BMW",
-            "color": "#fede00",
-            "id": 2,
-        },
-        {
-            "name": "Mersedes",
-            "color": "#6c779f",
-            "id": 3,
-        },
-        {
-            "name": "Ford",
-            "color": "#ef3c40",
-            "id": 4,
-        },
-    ],
-    winners: [
-        {
-            id: 1,
-            wins: 1,
-            time: 10,
-        }
-    ]
-};
-
+const jsonServer = require("json-server");
 const server = jsonServer.create();
-const router = jsonServer.router(db);
+const router = jsonServer.router(data);
 const middlewares = jsonServer.defaults();
-
-const PORT = 3000;
+const port = process.env.PORT || 3000;
 
 const state = { velocity: {}, blocked: {} };
 
@@ -49,7 +17,7 @@ server.patch('/engine', (req, res) => {
         return res.status(400).send('Wrong parameters: "id" should be any positive number, "status" should be "started", "stopped" or "drive"');
     }
 
-    if (!db.garage.find(car => car.id === +id)) {
+    if (!data.garage.find(car => car.id === +id)) {
         return res.status(404).send('Car with such id was not found in the garage.')
     }
 
@@ -94,6 +62,5 @@ server.patch('/engine', (req, res) => {
 });
 
 server.use(router);
-server.listen(PORT, () => {
-    console.log('Server is running on port', PORT);
-});
+
+server.listen(port);

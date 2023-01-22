@@ -1,0 +1,97 @@
+[
+    {
+      "name": "Tesla",
+      "color": "#e6e6fa",
+      "id": 1
+    },
+    {
+      "name": "BMW",
+      "color": "#fede00",
+      "id": 2
+    },
+    {
+      "name": "Mersedes",
+      "color": "#f4acb7",
+      "id": 3
+    },
+    {
+      "name": "Ford",
+      "color": "#ff70a6",
+      "id": 4
+    },
+    {
+      "name": "Opel",
+      "color": "#ff9770",
+      "id": 5
+    },
+    {
+      "name": "Porsche",
+      "color": "#ffd670",
+      "id": 6
+    },
+    {
+      "name": "Honda",
+      "color": "#e9ff70",
+      "id": 7
+    },
+    {
+      "name": "Audi C4 Sedan",
+      "color": "#fb8500",
+      "id": 8
+    },
+    {
+      "name": "Land Rover 405",
+      "color": "#ffafcc",
+      "id": 9
+    },
+    {
+      "name": "Ford C4 Aircross",
+      "color": "#588157",
+      "id": 10
+    },
+    {
+      "name": "Land Rover 605",
+      "color": "#83c5be",
+      "id": 11
+    },
+    {
+      "name": "Lexus C4 Cactus",
+      "color": "#bb3e03",
+      "id": 12
+    },
+    {
+      "name": "Dacia 206",
+      "color": "#ffbe0b",
+      "id": 13
+    },
+    {
+      "name": "Lexus C4 Coupe",
+      "color": "#b56576",
+      "id": 14
+    },
+    {
+      "name": "Mazda 407 SW",
+      "color": "#b9fbc0",
+      "id": 15
+    },
+    {
+      "name": "Corsa C5 Tourer",
+      "color": "#57cc99",
+      "id": 16
+    },
+    {
+      "name": "Opel C4 Coupe",
+      "color": "#40798c",
+      "id": 17
+    },
+    {
+      "name": "Porsche 308 SW",
+      "color": "#e36414",
+      "id": 18
+    },
+    {
+      "name": "Renault 306",
+      "color": "#6a4c93",
+      "id": 19
+    }
+  ]
